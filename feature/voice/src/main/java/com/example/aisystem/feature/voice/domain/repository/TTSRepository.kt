@@ -15,6 +15,7 @@ class TTSRepository @Inject constructor(
     suspend fun synthesize(text: String, messageId: String): File {
         val request = TTSRequest(text = text)
         val response = api.synthesize(request)
-        return audioFileManager.saveAudio(messageId, response)
+        // Convert ResponseBody to InputStream in the network layer
+        return audioFileManager.saveAudio(messageId, response.byteStream())
     }
 }

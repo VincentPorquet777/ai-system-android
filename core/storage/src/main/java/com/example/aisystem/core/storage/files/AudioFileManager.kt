@@ -4,8 +4,8 @@ import android.content.Context
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
-import okhttp3.ResponseBody
 import java.io.File
+import java.io.InputStream
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -19,11 +19,11 @@ class AudioFileManager @Inject constructor(
         return File(audioDir, "$messageId.mp3")
     }
 
-    suspend fun saveAudio(messageId: String, responseBody: ResponseBody): File {
+    suspend fun saveAudio(messageId: String, inputStream: InputStream): File {
         val file = getAudioFile(messageId)
         withContext(Dispatchers.IO) {
             file.outputStream().use { output ->
-                responseBody.byteStream().copyTo(output)
+                inputStream.copyTo(output)
             }
         }
         return file
