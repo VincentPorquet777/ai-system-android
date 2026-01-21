@@ -170,5 +170,5 @@ fun ConversationItem(
         }
     }
 
-    HorizontalDivider()
+    androidx.compose.material3.Divider()
 }
