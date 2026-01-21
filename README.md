@@ -2,7 +2,7 @@
 
 A capability-driven Android client for AI-powered conversations with offline-first architecture, voice support, and feature discovery.
 
-[![Android CI](https://github.com/YOUR_USERNAME/ai-system-android/actions/workflows/build.yml/badge.svg)](https://github.com/YOUR_USERNAME/ai-system-android/actions/workflows/build.yml)
+[![Android CI](https://github.com/VincentPorquet777/ai-system-android/actions/workflows/build.yml/badge.svg)](https://github.com/VincentPorquet777/ai-system-android/actions/workflows/build.yml)
 [![Platform](https://img.shields.io/badge/Platform-Android%208.0+-green.svg)](https://android.com)
 [![Language](https://img.shields.io/badge/Language-Kotlin-blue.svg)](https://kotlinlang.org)
 
@@ -50,7 +50,7 @@ frontend/
 
 ### Option 1: Download APK from GitHub Actions
 
-1. Go to [Actions tab](https://github.com/YOUR_USERNAME/ai-system-android/actions)
+1. Go to [Actions tab](https://github.com/VincentPorquet777/ai-system-android/actions)
 2. Click on the latest successful build (green checkmark)
 3. Scroll down to **Artifacts** section
 4. Download `app-debug.zip`
@@ -62,7 +62,7 @@ frontend/
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR_USERNAME/ai-system-android.git
+git clone https://github.com/VincentPorquet777/ai-system-android.git
 cd ai-system-android
 
 # Open in Android Studio
@@ -78,7 +78,7 @@ cd ai-system-android
 
 ### 1. Start the Backend Server
 
-This app requires the AI backend server. See [ai-backend](https://github.com/YOUR_USERNAME/ai-backend) for setup instructions.
+This app requires the AI backend server. Set up your backend locally or deploy it.
 
 ```bash
 # Example backend setup
@@ -309,8 +309,7 @@ MIT License - See [LICENSE](LICENSE) file
 
 ## 💬 Support
 
-- **Issues**: [GitHub Issues](https://github.com/YOUR_USERNAME/ai-system-android/issues)
-- **Backend**: [ai-backend repository](https://github.com/YOUR_USERNAME/ai-backend)
+- **Issues**: [GitHub Issues](https://github.com/VincentPorquet777/ai-system-android/issues)
 
 ---
 
